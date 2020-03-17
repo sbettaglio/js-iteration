@@ -50,15 +50,27 @@ const doubleTrouble = arr => {
  * strings as an argument and returns a new array with each string
  * suffixed with " is at index X" where X is the index of the element
  */
-
-// ...
+const stringyIndexes = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] += ' is at index ' + i
+  }
+  return arr
+}
 
 /*
  * 4) Define a function onlyTheEvenSurvive that accepts an array of
  * numbers and returns only the elements that are even
  */
 
-// ...
+const onlyTheEvenSurvive = arr => {
+  let even = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      even.push(arr[i])
+    }
+  }
+  return even
+}
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
