@@ -77,7 +77,15 @@ const onlyTheEvenSurvive = arr => {
  * numbers and returns only the elements at indexes that are even
  */
 
-// ...
+const onlyTheEvenIndexedSurvive = arr => {
+  let even = []
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      even.push(arr[i])
+    }
+  }
+  return even
+}
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
