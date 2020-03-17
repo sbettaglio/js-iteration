@@ -22,12 +22,15 @@
  * Example:
  *
  * const yelling = (array) => {
- *    // your code here
+  
  * }
  */
-
-// ...
-
+const yelling = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].toUpperCase()
+  }
+  return arr
+}
 /**
  *
  * 2) Define a function named `doubleTrouble` that takes an array of
@@ -35,7 +38,12 @@
  * the numbers multiplied by 2
  */
 
-// ...
+const doubleTrouble = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * 2
+  }
+  return arr
+}
 
 /*
  * 3) Define a function stringyIndexes() that takes an array of
